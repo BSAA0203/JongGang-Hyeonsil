@@ -28,12 +28,12 @@ public class SimpleCloudHandler : MonoBehaviour, IObjectRecoEventHandler {
         Debug.Log ("Cloud Reco update error " + updateError.ToString());
     }
     public void OnStateChanged(bool scanning) {
-    mIsScanning = scanning;
+        mIsScanning = scanning;
         if (scanning)
         {
-        // clear all known trackables
-        var tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
-        tracker.GetTargetFinder<ImageTargetFinder>().ClearTrackables(false);
+            // clear all known trackables
+            var tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+            tracker.GetTargetFinder<ImageTargetFinder>().ClearTrackables(false);
         }
     }
     // Here we handle a cloud target recognition event
