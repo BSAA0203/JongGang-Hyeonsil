@@ -52,14 +52,16 @@ public class SimpleCloudHandler : MonoBehaviour, IObjectRecoEventHandler {
         }
     }
     void OnGUI() {
+        GUIStyle style = new GUIStyle(GUI.skin.button);
+        style.fontSize = 30;
         // Display current 'scanning' status
-        GUI.Box (new Rect(100,100,200,50), mIsScanning ? "Scanning" : "Not scanning");
-        // Display metadata of latest detected cloud-target
-        GUI.Box (new Rect(100,200,200,50), "Metadata: " + mTargetMetadata);
+        // GUI.Box (new Rect(100,100,200,50), mIsScanning ? "Scanning" : "Not scanning");
+        // // Display metadata of latest detected cloud-target
+        // GUI.Box (new Rect(100,200,200,50), "Metadata: " + mTargetMetadata);
         // If not scanning, show button
         // so that user can restart cloud scanning
         if (!mIsScanning) {
-            if (GUI.Button(new Rect(100,300,200,50), "Restart Scanning")) {
+            if (GUI.Button(new Rect(Screen.width-1400,Screen.height-300,300,100), "Restart Scanning",style)) {
             // Restart TargetFinder
             mCloudRecoBehaviour.CloudRecoEnabled = true;
             }
