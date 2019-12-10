@@ -7,7 +7,7 @@ public class SimpleCloudHandler : MonoBehaviour, IObjectRecoEventHandler {
     public ImageTargetBehaviour ImageTargetTemplate;
     private CloudRecoBehaviour mCloudRecoBehaviour; 
     private bool mIsScanning = false; 
-    private string mTargetMetadata = ""; 
+    public static string mTargetMetadata = ""; 
 // Use this for initialization 
     void Start () { 
 // register this event handler at the cloud reco behaviour 
@@ -48,7 +48,8 @@ public class SimpleCloudHandler : MonoBehaviour, IObjectRecoEventHandler {
         if (ImageTargetTemplate) { 
             // enable the new result with the same ImageTargetBehaviour: 
             ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>(); 
-            tracker.GetTargetFinder<ImageTargetFinder>().EnableTracking(targetSearchResult, ImageTargetTemplate.gameObject); 
+            tracker.GetTargetFinder<ImageTargetFinder>().EnableTracking(targetSearchResult, ImageTargetTemplate.gameObject);
+            Debug.Log(mTargetMetadata);
         }
     }
     void OnGUI() {
