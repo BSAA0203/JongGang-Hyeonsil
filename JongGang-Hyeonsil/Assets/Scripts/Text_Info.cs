@@ -43,9 +43,13 @@ public class Text_Info : MonoBehaviour
         {
             txt.text="대학본부\n입학관리\n대학일자리센터\n학사관리과\n자유열람실\n이사장실\n회의실\n노동조합센터";
         }
-        else if(DefaultTrackableEventHandler.mTrackableBehaviour.TrackableName == "FrontGate")
+        else if(DefaultTrackableEventHandler.mTrackableBehaviour.TrackableName == "Library")
         {
-            txt.text="성결대 정문";
+            txt.text="1층 – 자동서고 / 이용자서비스센터 / 일반열람실 / 노트북 열람실 / XR센터 / U라운지\n2층 – (멀티미디어/전자정보실) / 그룹 감상실/ 레드룸 / 자유열람실 / 소극장\n3층 – 그룹 스터디룸 / 제1~2 자료열람실 / 오렌지룸\n4층 – 그룹 세미나룸 / 제3~4 자료열람실 / 옐로우룸\n5층 – (연속간행물 / 참고열람실) / 대학원 열람실 / 연구 열람실\n6층 – 하늘정원 / 카페열람실 / 고서실 / 신수기념실 / 영암기념실 / 소회의실 / 야립국제회의실";
+        }
+        else if(DefaultTrackableEventHandler.mTrackableBehaviour.TrackableName == "Test")
+        {
+            txt.text="테스트";
         }
     }
 }
