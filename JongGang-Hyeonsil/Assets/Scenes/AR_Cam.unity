@@ -203,11 +203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC9C0\uD558 \u2013 \uD53C\uC544\uB178\uC5F0\uC2B5\uC2E4\r\n1\uCE35 \u2013
-    \uC5B4\uD559 \uC2E4\uC2B5\uC2E4\r\n3\uCE35 \u2013 \uB514\uC9C0\uD138 \uD53C\uC544\uB178\uC2E4,
-    \uC138\uBBF8\uB098\uC2E4\r\n4\uCE35 \u2013 \uC784\uC6A9 \uACE0\uC2DC\uBC18, \uC0AC\uBC94\uB300\uD559
-    \uAD50\uC218 \uC5F0\uAD6C\uC2E4\r\n5\uCE35 \u2013 \uAD50\uAD6C \uC81C\uC791\uC2E4,
-    \uC778\uBB38\uB300\uD559 \uAD50\uC218 \uC5F0\uAD6C\uC2E4\r\n"
+  m_Text: Body Text
 --- !u!222 &108543120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -222,13 +218,13 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 596304881}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &350119953
+--- !u!43 &474311077
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh40682
+  m_Name: ImageTargetMesh13510
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1060,7 +1056,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784948849}
-  m_Mesh: {fileID: 350119953}
+  m_Mesh: {fileID: 474311077}
 --- !u!23 &1784948851
 MeshRenderer:
   m_ObjectHideFlags: 0
